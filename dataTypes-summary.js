@@ -10,16 +10,34 @@
    Array,Object,Function
  */
 
-   const id = Symbol('123')
-   const accountId = Symbol('123')
-   const bigNumber = 123454567788767n//this is bigInt datatpes
-   consolelog(id === accountId)
+  //  const id = Symbol('123')
+  //  const accountId = Symbol('123')
+  //  const bigNumber = 123454567788767n//this is bigInt datatpes
+  //  consolelog(id === accountId)
 
-   const name = ["rakshya","apekshya"]
-   const desc = {
-    name:"rakshya",
-    age:21,
+  //  const name = ["rakshya","apekshya"]
+  //  const desc = {
+  //   name:"rakshya",
+  //   age:21,
+  //  }
+  //  const myFunction = function(){
+  //   console.log("hello worlds")
+  //  }
+
+   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   //Two types of memory are there in js to store the value or variable
+   //Stack(Primitive DataTypes) it gives copy of variable not  a orginal value
+   //Heap(Non-Primitive dataTypes)it give direct refernce of orginal value
+
+   let name = "tara"
+   let name1 = name
+   name1 = "roshan"
+   console.log(name1) 
+   console.log(name)// it give tara it doesnot change coz stack or primitive datatypes chg only in copy not in orginal value
+
+   let myObj = {
+    clz : "pmc"
    }
-   const myFunction = function(){
-    console.log("hello worlds")
-   }
+   let myObj2 = myObj
+   myObj2.clz = "PKMC"
+   console.log(myObj)
