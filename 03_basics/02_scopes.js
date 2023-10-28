@@ -1,0 +1,12 @@
+// var c = 300
+let a = 30
+//{}curly braces means scope
+if(true){
+    let a = 10;
+    const b = 20
+    console.log("Inner value :",a)
+   
+}
+console.log(a);
+// console.log(b);
+// console.log(c);
