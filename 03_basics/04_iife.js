@@ -5,7 +5,7 @@
 }
 )();//second bracket means execution
 
-((name)=>{
+((name) =>{
     console.log(`"DB CONNECTED TW0" ${name}`);
-})("rakshya")
+} )("rakshya")
 

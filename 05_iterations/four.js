@@ -15,6 +15,6 @@ for (const key in myObj) {
 const arr = ["js","java","ruby","react"]
 
 for (const key in arr) {
-    console.log(arr[key])
+    // console.log(arr[key])
     
 }

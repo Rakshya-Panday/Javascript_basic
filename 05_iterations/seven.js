@@ -6,7 +6,7 @@ const myNumbers = [1,2,3,4,5,6,7,8,9,10];
 //     return num+10})
 // console.log(newNums)
 
-//chaining 
+//chaining means one after another map vitra map map vitra filter
 
 const newNums = myNumbers
                         .map((num)=>num*10)
