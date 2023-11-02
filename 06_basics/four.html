@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code with dom</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="lang">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguages(langName){
+        const li =  document.createElement("li")
+        //while using innerHTML all dom or tree will be traverse or check 
+        li.innerHTML = `${langName}`
+        document.querySelector('.lang').
+        appendChild(li)
+      
+        
+    }
+    addLanguages("python")
+    addLanguages("TypeScript")
+
+
+    function addOptiLanguage(langName){
+         const li = document.createElement("li")
+         //while using createTextNode tree will note be tranverse or transversing.
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector(".lang").appendChild(li)
+
+    }
+    addLanguages("Java")
+
+    //edit the element
+
+     const secondlang = document.querySelector("li:nth-child(2)")
+    //  secondlang.innerHTML = "mojo"  not optimize
+      const newLi = document.createElement("li")
+      newLi.textContent = "Mojo"
+      secondlang.replaceWith(newLi)
+      
+     //another way to edit
+      const firstLang = document.querySelector("li:first-child")
+      firstLang.outerHTML = '<li>TypeScript</li>'
+
+      //Remove
+      const lstLang = document.querySelector("li:last-child")
+      lstLang.remove()
+
+</script>
+</html>
