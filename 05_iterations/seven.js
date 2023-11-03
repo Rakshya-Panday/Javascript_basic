@@ -23,4 +23,4 @@ console.log(newNums)
 // const newNums = myNumbers.filter((num)=>num>5)
 // console.log(newNums) 
 
-//notes ====== map and forEach are same both are used for iteraytions but forEach doesnot return value but map return value and both are call back fynction but filter is a callback function it return a value with certain condition.
+//notes ====== map and forEach are same both are used for iteration but forEach doesnot return value but map return value and both are call back function but filter is a callback function it return a value with certain condition.

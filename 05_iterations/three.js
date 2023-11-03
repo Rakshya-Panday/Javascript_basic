@@ -20,7 +20,7 @@ for (const greet of greeting) {
 const map = new Map()
 map.set('IN',"India")
 map.set('NP',"Nepal")
-map.set('NP',"Nepal")
+map.set('NP',"Nepal")//map doesnot show repeat value
 // console.log(map)
 
 for (const [key,value] of map) {

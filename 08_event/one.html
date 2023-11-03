@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body >
+    <h2>Event Class</h2>
+   <div>
+    <ul class="family">
+        <!-- <li id="one" onclick="alert('rakshya')">Rakshya</li> this not a good one to use event-->
+        <li id="one">Rakshya</li>
+        <li id="two">Mummy</li>
+        <li id="three">Baba</li>
+        <li id="four">Rekha</li>
+        <li><a href="https://google.com" id="google">Google</a></li>
+     </ul>
+   </div>
+
+</body>
+<!-- all the event in javascript  are sequential   -->
+<script>
+    //using onclick we cannot get much feature or information instead of this we can use addEventListener
+    // document.getElementById('one').onclick = function(){
+    //     alert('rakhy')
+    // }
+
+     //before they are used
+     //attachEvent
+     //jQuery
+
+     //event object methods => type,timestamp,defaultPrevented,target,srcElement,toElement,currentTarget,clientX,clientY,screenX,screenY,altKey,ctrlKey,shiftKey,keyCode
+     
+    //addEventListener give more information and propagation
+    //   document.getElementById('family').addEventListener('click',function(e){
+    //     console.log("family clicked");
+    //   } ,false)
+
+    // document.getElementById('one').addEventListener('click',function(e){
+    //     console.log("rakshya clicked");
+    //     e.stopPropagation() //use to stop and end there
+      
+
+    //  } ,false)
+    //  //Event Propagation => there are two context in event propagation == event bubling(false bydefault) means from bottom to top and event capturing(true) means top to button use according to our need
+
+    //  // preventDefault
+    //   document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("google clicked")
+    //      e.preventDefault();
+    //      e.stopPropagation();
+    //   },false)
+
+    document.querySelector('.family').addEventListener('click',function(e){
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName ==='a'){
+            let removeIt = e.target.parentNode
+        removeIt.remove()
+        }
+
+        // to remove
+
+      
+
+    } ,false)
+     
+
+     
+</script>
+</html>

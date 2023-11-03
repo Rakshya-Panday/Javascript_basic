@@ -15,8 +15,8 @@ let chgNumber = Number(score);
 
 //*************************Opeartion****************************** */
 let value = 6
-let nevValue = -value
-//console.log(nevValue)
+let newValue = -value
+//console.log(newValue)
 //console.log(2+2)
 //console.log(2**3)// 2 times ** means power
 
